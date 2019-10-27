@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Quake"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-04 06:09:46 "/>
+        <attribute name="created" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0wNDsiMDU6NTY6MTEgIjsyMjYw"/>
+        <attribute name="edited" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0wNDsiMDY6MDk6NDYgIjsyOzIzNzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, puan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize Notunuzu Giriniz.&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Notunuzu Giriniz.&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="puan" expression="vize*40/100 + final*60/100"/>
+            <if expression="puan&gt;=60">
+                <then>
+                    <output expression="&quot;Ortalaman&#305;z &quot; &amp;puan" newline="True"/>
+                    <if expression="final&gt;=60">
+                        <then>
+                            <output expression="&quot;S&#305;n&#305;f&#305; Ge&#231;tiniz.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Final Notunuz 60'tan D&#252;&#351;&#252;k Oldu&#287;u &#304;&#231;in Kald&#305;n&#305;z.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Ortalaman&#305;z &quot; &amp;puan" newline="True"/>
+                    <output expression="&quot;Ortalaman&#305;z D&#252;&#351;&#252;k.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

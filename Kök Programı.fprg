@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Quake"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 02:05:16 "/>
+        <attribute name="created" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0wMjsiMDE6MzU6MjkgIjsyMjYw"/>
+        <attribute name="edited" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0wMjsiMDI6MDU6MTYgIjsxOzIzNjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="diski" type="Integer" array="False" size=""/>
+            <output expression="&quot;agir&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;bgir&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;cgir&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="diski" expression="b^2 - 4*a*c"/>
+            <declare name="k&#246;k1, k&#246;k2" type="Integer" array="False" size=""/>
+            <if expression="diski&lt;0">
+                <then>
+                    <output expression="&quot;k&#246;kyokaga&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="diski=0">
+                        <then>
+                            <output expression="&quot;k&#246;kvar&quot;" newline="True"/>
+                            <assign variable="k&#246;k1" expression="(-b+Sqrt(diski))/2*a"/>
+                            <assign variable="k&#246;k2" expression="(-b-Sqrt(diski))/2*a"/>
+                            <output expression="&quot;k&#246;k1 &quot; &amp;k&#246;k1" newline="True"/>
+                            <output expression="&quot;k&#246;k2 &quot; &amp; k&#246;k2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;k&#246;kvar&quot;" newline="True"/>
+                            <assign variable="k&#246;k1" expression="(-b+Sqrt(diski))/2*a"/>
+                            <assign variable="k&#246;k2" expression="(-b-Sqrt(diski))/2*a"/>
+                            <output expression="&quot;k&#246;k1 &quot; &amp;k&#246;k1" newline="True"/>
+                            <output expression="&quot;k&#246;k2 &quot; &amp; k&#246;k2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

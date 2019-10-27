@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Quake"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-27 09:18:24 "/>
+        <attribute name="created" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0yMzsiMDE6MzI6MzYgIjsyMjU4"/>
+        <attribute name="edited" value="UXVha2U7UVVBS0UtUEM7MjAxOS0xMC0yNzsiMDk6MTg6MjQgIjsyOzIzODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kelime, harf" type="String" array="False" size=""/>
+            <assign variable="harf" expression="&quot;&quot;"/>
+            <assign variable="kelime" expression="&quot;&quot;"/>
+            <while expression="harf!=&quot;H&quot;">
+                <output expression="&quot;harf gir&quot;" newline="True"/>
+                <input variable="harf"/>
+                <if expression="harf=&quot;H&quot;">
+                    <then/>
+                    <else>
+                        <if expression="Len(harf)&gt;1 &amp;&amp; Len(harf)&lt;0">
+                            <then>
+                                <output expression="&quot;tekharfgiriniz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="kelime" expression="kelime&amp;harf"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;kelime&quot;&amp;kelime" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
